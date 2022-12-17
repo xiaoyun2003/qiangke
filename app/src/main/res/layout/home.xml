@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2196F3"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:text=" 小云抢课"
+            android:textSize="17sp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tabIndicatorColor="@color/teal_200"
+        app:tabSelectedTextColor="@color/black"
+        android:id="@+id/tab"
+        app:tabTextColor="#aaaaaa"
+        app:layout_constraintTop_toBottomOf="@id/top"
+        app:tabMode="scrollable">
+
+
+
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        app:layout_constraintTop_toBottomOf="@id/tab"
+        android:id="@+id/viewpager"
+        app:layout_constraintBottom_toBottomOf="@id/bottom"
+        android:layout_width="match_parent"
+        app:layout_constrainedHeight="false"
+        android:layout_height="0dp">
+
+
+    </androidx.viewpager.widget.ViewPager>
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="60dp">
+        <Button
+            android:layout_width="150dp"
+            android:id="@+id/xk"
+            android:background="@drawable/buton_startxk_shape"
+            android:text="开始抢课"
+            android:textSize="17sp"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

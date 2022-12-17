@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+
+    android:background="@color/white"
+    android:layout_height="80dp">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:orientation="vertical"
+       android:layout_weight="1"
+       android:gravity="left|center"
+       android:layout_height="match_parent">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="10dp">
+
+</TextView>
+      <TextView
+          android:textSize="17sp"
+          android:layout_marginLeft="5dp"
+          android:layout_width="wrap_content"
+          android:text="课程名称"
+          android:textColor="#555555"
+          android:id="@+id/kcmc"
+          android:layout_height="wrap_content">
+
+      </TextView>
+      <TextView
+          android:layout_width="wrap_content"
+          android:id="@+id/xf"
+          android:textColor="#888888"
+          android:text="学分:"
+          android:layout_marginLeft="5dp"
+          android:layout_height="wrap_content">
+
+      </TextView>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="10dp">
+
+      </TextView>
+   </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_width="50dp"
+       android:layout_marginRight="10dp"
+       android:layout_height="match_parent"
+       android:layout_gravity="right"
+       android:gravity="right"
+       android:orientation="horizontal">
+<ImageView
+    android:layout_width="20dp"
+    android:id="@+id/sub_up_down"
+    android:layout_margin="5dp"
+    android:layout_gravity="center"
+    android:background="@drawable/up"
+    android:layout_height="20dp">
+
+
+</ImageView>
+
+   </LinearLayout>
+
+
+
+</LinearLayout>
